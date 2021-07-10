@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LinkedList
+namespace LinkedListImplementation
 {
     class Program
     {
@@ -8,10 +8,12 @@ namespace LinkedList
         {
             Console.WriteLine("---------------Linked List--------------------");
             LinkedList linkedList = new LinkedList();
+
             //Adding elements to the list
-            linkedList.Add(30);
-            linkedList.Add(56);
-            linkedList.Add(70);
+            linkedList.AddAtFirst(30);
+            linkedList.AddAtFirst(56);
+            linkedList.AddAtFirst(70);
+
             //Dispaly the list
             linkedList.Display();
         }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LinkedList
+namespace LinkedListImplementation
 {
     class LinkedList
     {
@@ -19,6 +19,23 @@ namespace LinkedList
             newNode.data = data;
             newNode.Next = head;
             head = newNode;
+        }
+
+
+        //Method to add elements at first
+        internal void AddAtFirst(int data)
+        {
+            Node newNode = new Node(data);
+            if (head == null)
+            {
+                head = newNode;
+            }
+            else
+            {
+                newNode.Next = head;
+                head = newNode;
+            }
+
         }
 
         //Method to display elements
