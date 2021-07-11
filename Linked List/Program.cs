@@ -12,7 +12,6 @@ namespace LinkedListImplementation
             //Adding elements to the list
             linkedList.Append(56);
             linkedList.Append(70);
-            //Insert element at given position
             linkedList.Insert(2, 30);
 
             //Search an element
@@ -25,9 +24,6 @@ namespace LinkedListImplementation
                 Console.WriteLine("The element 70 is not found in the list");
             }
 
-            //Insert element at given position
-            linkedList.Insert(3, 40);
-            linkedList.Display();
         }
     }
 }
