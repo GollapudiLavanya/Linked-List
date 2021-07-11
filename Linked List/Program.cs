@@ -15,18 +15,31 @@ namespace LinkedListImplementation
             //Insert element at given position
             linkedList.Insert(2, 30);
 
+            //Insert element at given position
+            linkedList.Insert(3, 40);
+
             //Search an element
-            if (linkedList.Search(56))
+            if (linkedList.Search(70))
             {
-                Console.WriteLine("The element 56 is found in the list");
+                Console.WriteLine("The element 70 is found in the list");
             }
             else
             {
-                Console.WriteLine("The element 56 is not found in the list");
+                Console.WriteLine("The element 70 is not found in the list");
             }
 
-            //Insert element at given position
-            linkedList.Insert(3, 40);
+            //Delete an element
+            if (linkedList.Delete(70))
+            {
+                Console.WriteLine("The element70 is deleted successfully");
+            }
+            else
+            {
+                Console.WriteLine("The element 70 is not found in the list");
+            }
+
+            Console.WriteLine("Size of the linked list is : " + linkedList.Size() + "\n");
+            //Dispaly linked list 
             linkedList.Display();
         }
     }
