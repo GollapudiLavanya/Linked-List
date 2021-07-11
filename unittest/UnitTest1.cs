@@ -39,6 +39,7 @@ namespace unittest
             Assert.IsTrue(linkedList.Search(40));
         }
 
+        [TestMethod]
         public void TestMethod3()
         {
             ///AAA Methodology
@@ -52,7 +53,24 @@ namespace unittest
             linkedList.Insert(3, 40);
 
             //Assert
-            Assert.IsTrue(linkedList.Delete(70));
+            Assert.IsTrue(linkedList.Delete(40));
+        }
+
+        [TestMethod]
+        public void TestMethod4()
+        {
+            ///AAA Methodology
+            //Arrange
+            SortedLinkedList sortedLinkedList = new SortedLinkedList();
+
+            //Act
+            sortedLinkedList.Add(56);
+            sortedLinkedList.Add(30);
+            sortedLinkedList.Add(40);
+            sortedLinkedList.Add(70);
+
+            //Assert
+            Assert.AreEqual(4, sortedLinkedList.Size());
         }
     }
 }
