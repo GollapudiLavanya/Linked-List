@@ -14,11 +14,16 @@ namespace LinkedListImplementation
             linkedList.Append(70);
             linkedList.Insert(2, 30);
 
-            //Delete element
-            linkedList.DeleteAtLast();
+            //Search an element
+            if (linkedList.Search(70))
+            {
+                Console.WriteLine("The element 70 is found in the list");
+            }
+            else
+            {
+                Console.WriteLine("The element 70 is not found in the list");
+            }
 
-            //Dispaly the list
-            linkedList.Display();
         }
     }
 }
