@@ -82,6 +82,17 @@ namespace LinkedListImplementation
                 temp.Next = newNode;
             }
         }
+
+        //Method to delete first element
+        public void DeleteAtFirst()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("List is empty");
+            }
+            head = head.Next;
+        }
+
         //Method to display elements
         public void Display()
         {
