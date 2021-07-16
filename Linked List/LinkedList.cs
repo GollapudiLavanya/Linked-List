@@ -18,7 +18,7 @@ namespace LinkedList
             Node newNode = new Node(data);
             newNode.data = data;
             newNode.Next = head;
-            head = newNode;
+            head == newNode;
         }
 
         //Method to display elements
